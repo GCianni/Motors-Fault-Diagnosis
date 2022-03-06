@@ -7,6 +7,16 @@ import numpy as np
 from data_reduction import pca_components
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import PredefinedSplit
+
+
+def split_data(X_train, X_val, y_train, y_val, estimator, param_grid):
+# Split Data to Train and Validation
+    split_index = [-1]*len(X_train) + [0]*len(X_val)
+    X = np.concatenate((X_train, X_val), axis=0)
+    y = np.concatenate((y_train, y_val), axis=0)
+    pds = PredefinedSplit(test_fold = split_index)
+    return X, y, pds
 
 
 def preprocessing(data_path, fs, window_size, window_step, lowpass_cutoff_freq, save_csv_path):
@@ -44,8 +54,10 @@ def preprocessing(data_path, fs, window_size, window_step, lowpass_cutoff_freq, 
     # Slip in Train: 70% - Val: 15% - Test: 15%
     X_train, X_aux, y_train, y_aux = train_test_split(X_minMax, Y, test_size=0.3, random_state=42)
     X_val, X_test, y_val, y_test = train_test_split(X_aux, y_aux, test_size=0.5, random_state=42)
+    del X_aux, y_aux
+    X_cv, y_cv, psd = split_data(X_train, X_val, y_train, y_val)
 
-    return X_train, X_val, X_test, y_train, y_val, y_test
+    return X_cv, X_test, y_cv, y_test, psd
 
 
 if __name__ == '__main__':
@@ -53,9 +65,8 @@ if __name__ == '__main__':
 
     path = r'C:\\Git\\Motor Fault Detection\\Teste_Data'# CSV Files Path
     save_csv_path = r'C:\\Git\\Motor Fault Detection\\Teste_Data\\saved_csv'
-    X_train, X_val, X_test, y_train, y_val, y_test = preprocessing(data_path=path, fs=10000, window_step=1, window_size=10,
+    X, X_test, y_cv, y_train, psd = preprocessing(data_path=path, fs=10000, window_step=1, window_size=10,
                                                                    lowpass_cutoff_freq=3000, save_csv_path=save_csv_path)
-    #print(X_train, y_train)
     end = time.time()
     print('loop Elapsed Time: ', end - start)
 
