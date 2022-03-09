@@ -1,0 +1,4 @@
+Motor Failure Prediction using metaclassifier assembled by a Neural Networks, Adaboost, Random Forests and XGBOOST.
+Feature engineering based on time-series rolling windows and FFT's and staticiacal's features extractions
+Comparing the use of PCA for data reduction
+Hyperparemeters tuning based on Genetic Algorithms
