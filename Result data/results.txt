@@ -1,0 +1,234 @@
+Random Forest
+Random Search Best param: {'n_estimators': 30, 'max_depth': 15, 'criterion': 'entropy', 'bootstrap': False}
+Random Search Best Accuracy: 0.9956811935610522
+Random Search Test Accuracy: 0.9988226059654631
+
+XGBoost
+Random Search Best param: {'n_estimators': 1000, 'max_depth': 6, 'learning_rate': 0.2, 'colsample_bytree': 0.7}
+Random Search Best Accuracy: 0.9964664310954063
+Random Search Test Accuracy: 0.9984301412872841
+
+Adaboost
+Random Search Best param: {'n_estimators': 750, 'learning_rate': 1}
+Random Search Best Accuracy: 0.878288182175108
+Random Search Test Accuracy: 0.8386970172684458
+
+Neural Network
+Random Search Best param: {'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (64, 64, 64), 'alpha': 0.05, 'activation': 'tanh'}
+Random Search Best Accuracy: 0.9917550058892816
+Random Search Test Accuracy: 0.9795918367346939
+
+MetaClassifier Test Acc: 0.9988226059654631
+--------------------------------------------
+
+Random Forest
+Random Search Best param: {'n_estimators': 30, 'max_depth': 30, 'criterion': 'entropy', 'bootstrap': False}
+Random Search Best Accuracy: 0.9960738123282293
+Random Search Test Accuracy: 0.9976452119309263
+
+XGBoost
+Random Search Best param: {'n_estimators': 500, 'max_depth': 3, 'learning_rate': 0.2, 'colsample_bytree': 0.3}
+Random Search Best Accuracy: 0.9968590498625834
+Random Search Test Accuracy: 0.9988226059654631
+
+Adaboost
+Random Search Best param: {'n_estimators': 50, 'learning_rate': 0.01}
+Random Search Best Accuracy: 0.9289360031409502
+Random Search Test Accuracy: 0.9281789638932496
+
+Neural Network
+Random Search Best param: {'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (8, 8), 'alpha': 0.01, 'activation': 'relu'}
+Random Search Best Accuracy: 0.9870435806831567
+Random Search Test Accuracy: 0.9839089481946625
+
+MetaClassifier Test Acc: 0.9976452119309263
+--------------------------------------------
+
+Random Forest
+Random Search Best param: {'n_estimators': 30, 'max_depth': 30, 'criterion': 'entropy', 'bootstrap': True}
+Random Search Best Accuracy: 0.8146839418924224
+Random Search Test Accuracy: 0.8139717425431711
+
+XGBoost
+Random Search Best param: {'n_estimators': 250, 'max_depth': 6, 'learning_rate': 0.05, 'colsample_bytree': 1}
+Random Search Best Accuracy: 0.8138987043580683
+Random Search Test Accuracy: 0.8155416012558869
+
+Adaboost
+Random Search Best param: {'n_estimators': 250, 'learning_rate': 0.1}
+Random Search Best Accuracy: 0.7345897133882999
+Random Search Test Accuracy: 0.728021978021978
+
+Neural Network
+Random Search Best param: {'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (64, 64, 64), 'alpha': 1, 'activation': 'relu'}
+Random Search Best Accuracy: 0.7534354142127994
+Random Search Test Accuracy: 0.7484301412872841
+
+MetaClassifier Test Acc: 0.8171114599686028
+--------------------------------------------
+
+Random Forest
+Random Search Best param: {'n_estimators': 20, 'max_depth': 15, 'criterion': 'entropy', 'bootstrap': True}
+Random Search Best Accuracy: 0.8209658421672555
+Random Search Test Accuracy: 0.8116169544740973
+
+XGBoost
+Random Search Best param: {'n_estimators': 100, 'max_depth': 10, 'learning_rate': 0.2, 'colsample_bytree': 1}
+Random Search Best Accuracy: 0.8087946603847664
+Random Search Test Accuracy: 0.8143642072213501
+
+Adaboost
+Random Search Best param: {'n_estimators': 1000, 'learning_rate': 0.01}
+Random Search Best Accuracy: 0.7082842559874362
+Random Search Test Accuracy: 0.6923076923076923
+
+Neural Network
+Random Search Best param: {'solver': 'adam', 'learning_rate': 'adaptive', 'hidden_layer_sizes': (64, 64), 'alpha': 0.1, 'activation': 'relu'}
+Random Search Best Accuracy: 0.767962308598351
+Random Search Test Accuracy: 0.7617739403453689
+
+MetaClassifier Test Acc: 0.8143642072213501
+--------------------------------------------
+
+Random Forest
+Genetic Search Best param: {'n_estimators': 30, 'max_depth': 20, 'bootstrap': False, 'criterion': 'entropy'}
+Genetic Search Best Accuracy: 0.9960738123282293
+Genetic Search  Test Accuracy: 0.9976452119309263
+
+XGBoost
+Genetic Search Best param: {'max_depth': 3, 'learning_rate': 0.2, 'n_estimators': 250, 'colsample_bytree': 0.3}
+Genetic Search Best Accuracy: 0.9972516686297606
+Genetic Search  Test Accuracy: 0.9988226059654631
+
+Adaboost
+Genetic Search Best param: {'n_estimators': 500, 'learning_rate': 0.001}
+Genetic Search Best Accuracy: 0.9289360031409502
+Genetic Search  Test Accuracy: 0.9289638932496075
+
+Neural Network
+Genetic Search Best param: {'hidden_layer_sizes': (128, 128, 128), 'activation': 'tanh', 'solver': 'adam', 'alpha': 0.0001, 'learning_rate': 'constant'}
+Genetic Search Best Accuracy: 0.9941107184923439
+Genetic Search  Test Accuracy: 0.9980376766091051
+
+MetaClassifier Test Acc: 0.9976452119309263
+--------------------------------------------
+
+Random Forest
+Genetic Search Best param: {'n_estimators': 30, 'max_depth': 30, 'bootstrap': False, 'criterion': 'entropy'}
+Genetic Search Best Accuracy: 0.9960738123282293
+Genetic Search  Test Accuracy: 0.9976452119309263
+
+XGBoost
+Genetic Search Best param: {'max_depth': 3, 'learning_rate': 0.2, 'n_estimators': 250, 'colsample_bytree': 0.3}
+Genetic Search Best Accuracy: 0.9972516686297606
+Genetic Search  Test Accuracy: 0.9988226059654631
+
+Adaboost
+Genetic Search Best param: {'n_estimators': 750, 'learning_rate': 0.001}
+Genetic Search Best Accuracy: 0.9301138594424814
+Genetic Search  Test Accuracy: 0.9293563579277865
+
+Neural Network
+Genetic Search Best param: {'hidden_layer_sizes': (128, 128, 128), 'activation': 'relu', 'solver': 'adam', 'alpha': 0.1, 'learning_rate': 'adaptive'}
+Genetic Search Best Accuracy: 0.994503337259521
+Genetic Search  Test Accuracy: 0.9956828885400314
+
+MetaClassifier Test Acc: 0.9976452119309263
+--------------------------------------------
+pre_pross_fining
+time: 6.682561369736989 min
+
+Random Forest
+Genetic Search Best param: {'n_estimators': 20, 'max_depth': 20, 'bootstrap': False, 'criterion': 'entropy'}
+Genetic Search Best Accuracy: 0.9966647047282715
+Genetic Search  Test Accuracy: 0.9960768928991761
+
+XGBoost
+Genetic Search Best param: {'max_depth': 3, 'learning_rate': 0.2, 'n_estimators': 1000, 'colsample_bytree': 1}
+Genetic Search Best Accuracy: 0.9984304492838925
+Genetic Search  Test Accuracy: 0.9978422910945469
+
+Adaboost
+Genetic Search Best param: {'n_estimators': 10, 'learning_rate': 0.01}
+Genetic Search Best Accuracy: 0.8636452815381597
+Genetic Search  Test Accuracy: 0.8728913299333072
+
+Neural Network
+Genetic Search Best param: {'hidden_layer_sizes': (128, 128, 128), 'activation': 'relu', 'solver': 'adam', 'alpha': 0.01, 'learning_rate': 'constant'}
+Genetic Search Best Accuracy: 0.9970570924072985
+Genetic Search  Test Accuracy: 0.9943114947038054
+MetaClassifier Test Acc: 0.9970576696743821
+Metaclass total time: 81.23428744475046min
+
+Random Forest
+Genetic Search Best param: {'n_estimators': 30, 'max_depth': 20, 'bootstrap': False, 'criterion': 'entropy'}
+Genetic Search Best Accuracy: 0.9966647047282715
+Genetic Search  Test Accuracy: 0.9972538250294233
+
+XGBoost
+Genetic Search Best param: {'max_depth': 3, 'learning_rate': 0.1, 'n_estimators': 500, 'colsample_bytree': 1}
+Genetic Search Best Accuracy: 0.9984304492838925
+Genetic Search  Test Accuracy: 0.9984307571596704
+
+Adaboost
+Genetic Search Best param: {'n_estimators': 10, 'learning_rate': 0.01}
+Genetic Search Best Accuracy: 0.8636452815381597
+Genetic Search  Test Accuracy: 0.8728913299333072
+
+Neural Network
+Genetic Search Best param: {'hidden_layer_sizes': (128, 128, 128), 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate': 'adaptive'}
+Genetic Search Best Accuracy: 0.9972532862468119
+Genetic Search  Test Accuracy: 0.9962730482542174
+MetaClassifier Test Acc: 0.9978422910945469
+Metaclass total time: 79.21931840578715min
+loop Elapsed Time:  167.13651208082834
+
+-------------------------------------
+"C:\Git\Motor Fault Detection\venv\Scripts\python.exe" "C:/Git/Motor Fault Detection/main.py"
+pre_pross_fining
+time: 4.583291006088257 min
+
+Random Forest
+Genetic Search Best param: {'n_estimators': 20, 'max_depth': 50, 'bootstrap': False, 'criterion': 'entropy'}
+Genetic Search Best Accuracy: 0.9966647047282715
+Genetic Search  Test Accuracy: 0.9960768928991761
+
+XGBoost
+Genetic Search Best param: {'max_depth': 2, 'learning_rate': 0.2, 'n_estimators': 1000, 'colsample_bytree': 1}
+Genetic Search Best Accuracy: 0.9986266431234059
+Genetic Search  Test Accuracy: 0.9990192232247941
+
+Adaboost
+Genetic Search Best param: {'n_estimators': 1000, 'learning_rate': 0.5}
+Genetic Search Best Accuracy: 0.843241122228762
+Genetic Search  Test Accuracy: 0.7848175755198117
+
+Neural Network
+Genetic Search Best param: {'hidden_layer_sizes': (128, 128, 128), 'activation': 'tanh', 'solver': 'adam', 'alpha': 0.05, 'learning_rate': 'adaptive'}
+Genetic Search Best Accuracy: 0.9972532862468119
+Genetic Search  Test Accuracy: 0.9964692036092585
+MetaClassifier Test Acc: 0.9974499803844645
+Metaclass total time: 68.63962488174438min
+
+Random Forest
+Genetic Search Best param: {'n_estimators': 20, 'max_depth': 20, 'bootstrap': False, 'criterion': 'entropy'}
+Genetic Search Best Accuracy: 0.9966647047282715
+Genetic Search  Test Accuracy: 0.9960768928991761
+
+XGBoost
+Genetic Search Best param: {'max_depth': 2, 'learning_rate': 0.2, 'n_estimators': 1000, 'colsample_bytree': 0.7}
+Genetic Search Best Accuracy: 0.9986266431234059
+Genetic Search  Test Accuracy: 0.9988230678697528
+
+Adaboost
+Genetic Search Best param: {'n_estimators': 250, 'learning_rate': 0.001}
+Genetic Search Best Accuracy: 0.8636452815381597
+Genetic Search  Test Accuracy: 0.8728913299333072
+
+Neural Network
+Genetic Search Best param: {'hidden_layer_sizes': (128, 128, 128), 'activation': 'relu', 'solver': 'adam', 'alpha': 0.001, 'learning_rate': 'constant'}
+Genetic Search Best Accuracy: 0.9966647047282715
+Genetic Search  Test Accuracy: 0.9964692036092585
+MetaClassifier Test Acc: 0.9972538250294233
+Metaclass total time: 71.18912571668625min
+loop Elapsed Time:  144.4120416045189

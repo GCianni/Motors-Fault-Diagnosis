@@ -1,0 +1,9 @@
+Window Size: 500,	Step: 250, 	RANDOM_SEARCH
+Window Size: 500, 	Step: 250,	RANDOM_SEARCH
+Window Size: 500, 	Step: 250,	RANDOM_SEARCH
+Window Size: 500, 	Step: 250,	RANDOM_SEARCH
+Window Size: 500, 	Step: 250,	GENETIC_SEARCH
+Window Size: 500, 	Step: 250,	GENETIC_SEARCH
+Window Size: 500, 	Step: 125,	GENETIC_SEARCH
+Window Size: 500, 	Step: 125,	GENETIC_SEARCH
+

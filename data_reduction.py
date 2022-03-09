@@ -7,7 +7,7 @@ def pca_components(data, component_percent, graph: bool):
     pca = PCA(n_components=component_percent)
     pca.fit(data)
     if graph:
-        show_graph(data, component_percent, False)
+        show_graph(data, component_percent, True)
     return pca.transform(data)
 
 
@@ -33,5 +33,5 @@ def show_graph(data, component_percent: float, save: bool):
     plt.show()
     if save:
         fig.savefig(r'C:\\Git\\Motor Fault Detection\\Teste_Data\\saved_jpg\\img.png')
-    plt.close()
+        plt.close()
     return

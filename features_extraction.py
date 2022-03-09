@@ -5,6 +5,7 @@ import pandas as pd
 from scipy.stats import kurtosis, norm, entropy
 from scipy.signal import butter, lfilter, freqz
 from sklearn.utils import resample
+import matplotlib.pyplot as plt
 
 
 def probability(sample):
@@ -53,7 +54,8 @@ def feature_dataset(dataframe, fs, window_size, window_step,):
                            5: 'Spectral Maximum ' + channel, 6: 'Spectral Kurtosis ' + channel},
                           axis=1,inplace=True)
         df_appender.append(feature_df)
-
+    plt.plot(feature_df)
+    plt.show()
     return pd.concat(df_appender, axis=1)
 
 
@@ -76,8 +78,3 @@ def feature_extraction(array, fs):
     feature_dataframe.drop(labels=[3], axis=1, inplace=True)
     feature_dataframe[[3, 4, 5, 6]] = pd.DataFrame(spectral_data.tolist(), index=feature_dataframe.index)
     return feature_dataframe
-
-
-def get_data(filepath, ):
-
-    return data
